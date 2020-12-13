@@ -1,0 +1,10 @@
+.perk{
+  max-width: 420px;
+  display: flex;
+  align-items: center;
+  &__icon{
+    font-size: 100px;
+    margin-right: 24px;
+    color: #dd141d;
+  }
+}
