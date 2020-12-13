@@ -1,4 +1,5 @@
 import React from 'react';
+import { RiCheckboxCircleFill } from 'react-icons/ri';
 
 import './styles/ConfirmationCard.scss';
 
@@ -10,25 +11,28 @@ const ConfirmationCard = () => {
       </div>
       <div className="confirmationCard__status">
         <div className="confirmationCard__status__title">
-          <span>Icon</span>
+          <RiCheckboxCircleFill className="confirmationCard__status__icon" />
           <p>Los productos fueron aprobados satisfactoriamente</p>
         </div>
         <p>
-          En un plazo maximo de 5 dias calendario, se le informara por medio de
-          un mensajede texto el estado de sus productos
+          En un plazo maximo de 
+          {' '}
+          <strong>5 dias calendario</strong>
+          , se le
+          informara por medio de un mensajede texto el estado de sus productos
         </p>
       </div>
       <div className="confirmationCard__details">
-        <p>Adelanto de pension:</p>
+        <p className="confirmationCard__details__title">Adelanto de pension:</p>
         <p>Aprobado</p>
       </div>
       <div className="confirmationCard__details">
-        <p>Tipo de Seguro:</p>
-        <p>Aprobado</p>
+        <p className="confirmationCard__details__title">Tipo de Seguro:</p>
+        <p>Tipo de seguro: Familiar - 106.200 mensual</p>
       </div>
       <div className="confirmationCard__details">
-        <p>Fecha y hora:</p>
-        <p>Aprobado</p>
+        <p className="confirmationCard__details__title">Fecha y hora:</p>
+        <p>Fecha y hora: 29/01/2020, 09:41 a.m.</p>
       </div>
     </div>
   );
