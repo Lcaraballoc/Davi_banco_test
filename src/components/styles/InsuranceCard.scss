@@ -1,0 +1,43 @@
+.insuranceCard{
+  position: relative;
+  &__title{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.4fr;
+    align-items: center;
+    border-radius: 10pt;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+    padding: 14px 10px;
+    height: 42px;
+    background-color: white;
+  }
+  input{
+    justify-self: center;
+  }
+  span{
+    display: block;
+  }
+  &__button{
+    position: absolute;
+    width: 120px;
+    top: 58px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #F9F9F9;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+    padding: 4px;
+    border-radius: 12pt;
+  }
+  &__details{
+    position: absolute;
+    border-radius: 12pt;
+    padding: 20px 12px 10px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+    background-color: white;
+    z-index: -1;
+  }
+  ul{
+    margin: 0;
+  }
+
+}
