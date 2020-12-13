@@ -1,0 +1,24 @@
+.navBar{
+  background-color: #d9d9d9;
+  padding: 12px;
+
+  h3{
+    color:#575757;
+    text-align: center;
+    margin: 8px 8px 12px;
+  }
+
+  &__row{
+    display: flex;
+
+    &__icon{
+    font-size: 26px;
+    margin-right:12px;
+    color: #dd141d;
+    }
+    
+    span{
+      display: block;
+    }
+  }
+}
