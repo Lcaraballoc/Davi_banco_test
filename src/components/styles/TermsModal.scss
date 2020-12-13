@@ -1,0 +1,38 @@
+.termsModal{
+  width: 300px;
+  height: 340px;
+  background-color: #EEEEEE;
+  border-radius: 7pt 7pt 0pt 0pt;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+  padding: 16px;
+
+  &__title{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__description{
+    text-align: center;
+  }
+  
+  &__buttons{
+    margin-top: 24px;
+    text-align: center;
+    button{
+      width: 100px;
+      margin: 0 8px;
+    }
+  }
+
+  &__footer{
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
