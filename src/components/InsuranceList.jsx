@@ -7,7 +7,7 @@ const InsuranceList = () => {
   return (
     <div className="insuranceList">
       <p>¿Como quiere pagar su seguro?</p>
-      <div>
+      <div className="insuranceList__type">
         <label htmlFor="monthly">
           <input type="radio" name="time" id="monthly" />
           Mensual
@@ -16,10 +16,10 @@ const InsuranceList = () => {
           <input type="radio" name="time" id="yearly" />
           Anual
         </label>
-        <p>Seleccione el tipo de cobertura que desea adquirir</p>
-        <InsuranceCard />
-        <InsuranceCard />
       </div>
+      <p>Seleccione el tipo de cobertura que desea adquirir</p>
+      <InsuranceCard />
+      <InsuranceCard />
     </div>
   );
 };

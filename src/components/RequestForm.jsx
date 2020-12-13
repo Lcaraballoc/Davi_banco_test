@@ -19,7 +19,6 @@ const RequestForm = () => {
         />
         <FormInput
           title="¿Cuál es su actividad laboral actual?"
-          placeHolder="Profesion"
           type="select"
           options={['Empleado', 'Comerciante', 'Desempleado']}
         />

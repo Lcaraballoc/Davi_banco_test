@@ -1,7 +1,6 @@
 .insuranceCard{
   position: relative;
-  min-height: 174px;
-  margin: 32px 0px;
+  margin: 5px 0px 22px;
   &__title{
     position: relative;
     z-index: 1;
@@ -14,6 +13,13 @@
     height: 42px;
     background-color: white;
   }
+  &__subtitle{
+    font-size: 12px;
+    font-weight:500;
+  }
+  &__price{
+    font-size: 14px;
+  }
   input{
     justify-self: center;
   }
@@ -22,6 +28,9 @@
   }
   &__button{
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 120px;
     top: 58px;
     left: 0;
@@ -31,17 +40,22 @@
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
     padding: 4px;
     border-radius: 12pt;
+    font-size: 12px;
     z-index: 2;
   }
   &__details{
-    position: absolute;
     border-radius: 12pt;
     padding: 20px 12px 10px;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
     background-color: white;
   }
   ul{
     margin: 0;
+    padding-left: 22px;
+    list-style-image: url(/src/assets/bulletPoint.png);
+  }
+  li{
+    font-size: 12px;
+    margin-bottom: 5px;
   }
 
 }
