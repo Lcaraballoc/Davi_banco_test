@@ -10,8 +10,10 @@ const NavBar = () => {
       <div className="navBar__row">
         <RiMenuFill className="navBar__row__icon" />
         <div className="navBar__row__details">
-          <span>Prueba</span>
-          <span>Beneficios y Caracteristicas</span>
+          <span className="navBar__row__section">Prueba</span>
+          <span className="navBar__row__subSection">
+            Beneficios y Caracteristicas
+          </span>
         </div>
       </div>
     </div>

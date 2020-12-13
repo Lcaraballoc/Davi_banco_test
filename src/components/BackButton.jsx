@@ -1,12 +1,12 @@
 import React from 'react';
-import { IoIosArrowDropleftCircle } from 'react-icons/io';
+import BackIcon from '../assets/atras.png';
 
 import './styles/BackButton.scss';
 
 const BackButton = () => {
   return (
     <div className="backButton">
-      <IoIosArrowDropleftCircle className="backButton__icon" />
+      <img src={BackIcon} alt="" className="backButton__icon" />
       <span>Atras</span>
     </div>
   );
