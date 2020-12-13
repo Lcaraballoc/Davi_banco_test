@@ -1,0 +1,10 @@
+.formInput{
+  display: grid;
+  grid-template-rows: 1fr;
+  margin-bottom: 12px;
+  input{
+    height: 36px;
+    border: 1px solid #7070704D;
+    border-radius: 5pt;
+  }
+}

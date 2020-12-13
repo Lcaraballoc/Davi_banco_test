@@ -1,16 +1,13 @@
 import React from 'react';
-import { IoIosArrowDropleftCircle } from 'react-icons/io';
 import Perk from './Perk';
+import BackButton from './BackButton';
 
 import './styles/PerkList.scss';
 
 const PerkList = () => {
   return (
     <div className="perkList">
-      <div className="backButton">
-        <IoIosArrowDropleftCircle />
-        <span>Atras</span>
-      </div>
+      <BackButton />
       <Perk />
       <Perk />
       <Perk />

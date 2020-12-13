@@ -1,0 +1,10 @@
+.backButton{
+  display: flex;
+  align-items: center;
+  margin: 8px;
+  &__icon{
+    font-size: 32px;
+    color: #DD141D;
+    margin-right: 12px;
+  }
+}
