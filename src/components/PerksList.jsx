@@ -1,6 +1,5 @@
 import React from 'react';
 import Perk from './Perk';
-import BackButton from './BackButton';
 import Icon from '../assets/Icon2.png';
 import Icon2 from '../assets/Icon4.png';
 import Icon3 from '../assets/Icon1.png';
@@ -11,7 +10,6 @@ import './styles/PerkList.scss';
 const PerkList = () => {
   return (
     <div className="perkList">
-      <BackButton />
       <Perk
         icon={Icon}
         content="Reciba el pago de su pensión y otros depósitos en su cuenta."

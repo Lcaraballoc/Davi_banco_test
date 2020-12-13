@@ -1,7 +1,7 @@
 .perk{
   max-width: 420px;
   display: flex;
-  margin: 26px 8px 0px ;
+  margin: 0px 8px 26px ;
   align-items: center;
   font-size: 14px;
   &__icon{
@@ -11,5 +11,8 @@
   }
   &__description{
     margin: 0;
+  }
+  &:last-child{
+    margin: 0px 8px;
   }
 }

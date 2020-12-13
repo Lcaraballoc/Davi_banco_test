@@ -1,10 +1,24 @@
 .formInput{
   display: grid;
   grid-template-rows: 1fr;
-  margin-bottom: 12px;
-  input{
+  margin-top: 15px;
+  font-size: 13px;
+  color: #444444;
+  &:last-child{
+    margin-bottom: 15px;
+  }
+  input, select{
+    margin-top: 5px;
     height: 36px;
     border: 1px solid #7070704D;
     border-radius: 5pt;
+    padding: 0 0 0 10px;
+    &::placeholder{
+      color: #575757;
+      opacity: 50%;
+    }
+  }
+  select{
+    height: 38px;
   }
 }

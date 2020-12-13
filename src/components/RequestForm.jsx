@@ -1,5 +1,6 @@
 import React from 'react';
 import FormInput from './FormInput';
+import Button from './Button';
 
 import './styles/RequestForm.scss';
 
@@ -7,48 +8,40 @@ const RequestForm = () => {
   return (
     <form className="requestForm" action="">
       <div className="requestForm__card">
-        <p>
+        <p className="requestForm__card__header">
           Indique los siguientes datos para continuar con la solicitud de su
           adelanto de pension:
         </p>
 
         <FormInput
           title="¿Cuál es el valor total de sus ingresos mensuales?"
-          placeHolder="1.000.000 COP"
           type="text"
         />
         <FormInput
           title="¿Cuál es su actividad laboral actual?"
           placeHolder="Profesion"
-          type="text"
+          type="select"
+          options={['Empleado', 'Comerciante', 'Desempleado']}
         />
-        <FormInput
-          title="¿Cuál es el nombre de su empresa?"
-          placeHolder="Empresa"
-          type="text"
-        />
+        <FormInput title="¿Cuál es el nombre de su empresa?" type="text" />
         <FormInput
           title="¿Qué tipo de contrato tiene?"
-          placeHolder="Indefinido"
-          type="text"
+          type="select"
+          options={['Indefinido', 'A Termino Fijo', 'Independiente']}
         />
-        <FormInput
-          title="¿Cuál es su ciudad de residencia?"
-          placeHolder="Bogota"
-          type="text"
-        />
+        <FormInput title="¿Cuál es su ciudad de residencia?" type="text" />
         <FormInput
           title="¿Cuál es la direccion de residencia?"
-          placeHolder="Bogota"
+          placeHolder="Carrera 9 # 116 -08, Bogotá"
           type="text"
         />
         <FormInput
           title="Si esta recibiendo ayuda de un asesor del banco, ingrese el codigo del asesor"
-          placeHolder="Bogota"
+          placeHolder="Opcional"
           type="text"
         />
       </div>
-      <button type="submit">Continuar</button>
+      <Button text="Continuar" />
     </form>
   );
 };
