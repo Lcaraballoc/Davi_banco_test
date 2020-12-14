@@ -1,17 +1,11 @@
 import React, { useState } from 'react';
-import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+import MoreInfoButton from './MoreInfoButton';
 
 import './styles/InsuranceCard.scss';
 
-const InsuranceCard = ({
-  title,
-  price,
-  name,
-  id,
-  value,
-  handleChange,
-  photo,
-}) => {
+const InsuranceCard = props => {
+  const { title, price, name, id, value, handleChange, photo } = props;
+
   const [componentStatus, showComponent] = useState(false);
 
   const toggleComponent = () => {
@@ -37,14 +31,11 @@ const InsuranceCard = ({
           <img src={photo} alt="" />
         </label>
 
-        <button
-          className="insuranceCard__button"
+        <MoreInfoButton
+          text="Ver más informacion"
           onClick={toggleComponent}
-          type="button"
-        >
-          <span>Ver más información</span>
-          {componentStatus ? <IoIosArrowUp /> : <IoIosArrowDown />}
-        </button>
+          componentStatus={componentStatus}
+        />
 
         {componentStatus && (
           <div className="insuranceCard__details">

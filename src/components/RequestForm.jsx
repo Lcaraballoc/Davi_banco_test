@@ -35,7 +35,7 @@ const RequestForm = ({ handleModal }) => {
       <div className="requestForm__card">
         <p className="requestForm__card__header">
           Indique los siguientes datos para continuar con la solicitud de su
-          adelanto de pension:
+          adelanto de pensión:
         </p>
 
         <FormInput
@@ -76,7 +76,7 @@ const RequestForm = ({ handleModal }) => {
           onChange={handleChange}
         />
         <FormInput
-          title="¿Cuál es la direccion de residencia?"
+          title="¿Cuál es la dirección de residencia?"
           placeHolder="Carrera 9 # 116 -08, Bogotá"
           type="text"
           name="address"
@@ -84,7 +84,7 @@ const RequestForm = ({ handleModal }) => {
           onChange={handleChange}
         />
         <FormInput
-          title="Si esta recibiendo ayuda de un asesor del banco, ingrese el codigo del asesor"
+          title="Si está recibiendo ayuda de un asesor del Banco, ingrese el código del asesor:"
           placeHolder="Opcional"
           type="text"
           name="adviser"

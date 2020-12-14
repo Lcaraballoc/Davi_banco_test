@@ -7,7 +7,6 @@ import TermsModal from '../components/TermsModal';
 
 const RequestPage = () => {
   const [modalState, setState] = useState(false);
-
   const handleModal = () => {
     if (modalState === false) {
       setState(true);

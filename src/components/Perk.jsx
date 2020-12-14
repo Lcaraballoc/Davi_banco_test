@@ -7,10 +7,7 @@ const Perk = ({ icon, content }) => {
   return (
     <div className="perk">
       <img src={icon} alt="" className="perk__icon" />
-      <p className="perk__description">
-        {content}
-        {' '}
-      </p>
+      <p className="perk__description">{content} </p>
     </div>
   );
 };

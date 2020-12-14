@@ -15,10 +15,7 @@ const ConfirmationCard = () => {
           <p>Los productos fueron aprobados satisfactoriamente</p>
         </div>
         <p>
-          En un plazo maximo de 
-          {' '}
-          <strong>5 dias calendario</strong>
-          , se le
+          En un plazo maximo de <strong>5 dias calendario</strong>, se le
           informara por medio de un mensajede texto el estado de sus productos
         </p>
       </div>

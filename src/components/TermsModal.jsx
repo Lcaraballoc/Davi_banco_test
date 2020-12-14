@@ -16,12 +16,14 @@ const TermsModal = ({ handleModal }) => {
         </div>
         <hr />
 
-        <h4>¿Quiere proteger a su familia?</h4>
-        <p>Cubra los gastos de su hogar en caso de:</p>
-        <ul>
-          <li>Muerte por cualquier causa</li>
-          <li>Incapacidad total y permanente</li>
-        </ul>
+        <div className="termsModal__details">
+          <h4>¿Quiere proteger a su familia?</h4>
+          <p>Cubra los gastos de su hogar en caso de:</p>
+          <ul>
+            <li>Muerte por cualquier causa</li>
+            <li>Incapacidad total y permanente</li>
+          </ul>
+        </div>
 
         <div className="termsModal__description">
           <a href="/">Ver Terminos y Condiciones</a>
@@ -35,9 +37,7 @@ const TermsModal = ({ handleModal }) => {
         </div>
 
         <p className="termsModal__footer">
-          Este seguro es expedido por 
-          {' '}
-          <strong>Seguros Bolivar S.A</strong>
+          Este seguro es expedido por <strong>Seguros Bolivar S.A</strong>
         </p>
       </div>
     </ModalContainer>

@@ -49,6 +49,7 @@ const InsuranceList = () => {
             Anual
           </label>
         </div>
+
         <p>Seleccione el tipo de cobertura que desea adquirir</p>
         <InsuranceCard
           title="Cobertura familiar"
@@ -69,6 +70,7 @@ const InsuranceList = () => {
           handleChange={handleChange}
         />
       </div>
+
       <Link to="/approval">
         <Button
           text="Continuar"

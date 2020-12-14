@@ -2,15 +2,8 @@ import React from 'react';
 
 import './styles/FormInput.scss';
 
-const FormInput = ({
-  title,
-  placeHolder,
-  type,
-  id,
-  name,
-  options,
-  onChange,
-}) => {
+const FormInput = props => {
+  const { title, placeHolder, type, id, name, options, onChange } = props;
   if (type === 'select') {
     return (
       <div className="formInput">
@@ -28,7 +21,7 @@ const FormInput = ({
   }
   return (
     <div className="formInput">
-      <span>{title || 'Prueba'}</span>
+      <span>{title}</span>
       <input
         placeholder={placeHolder}
         type={type || 'text'}

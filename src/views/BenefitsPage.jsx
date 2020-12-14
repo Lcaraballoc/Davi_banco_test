@@ -14,9 +14,7 @@ const BenefitsPage = () => {
       <BackButton />
       <PerksList />
       <p className="benefitsPage__footer">
-        Este producto cuenta con el seguro de depositos 
-        {' '}
-        <strong>FOGAFIN</strong>
+        Este producto cuenta con el seguro de depositos <strong>FOGAFIN</strong>
       </p>
       <Link to="/requestForm">
         <Button text="Continuar" />
