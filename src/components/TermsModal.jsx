@@ -28,7 +28,7 @@ const TermsModal = ({ handleModal }) => {
         </div>
 
         <div className="termsModal__description">
-          <a href="/">Ver Terminos y Condiciones</a>
+          <a href="#">Ver Terminos y Condiciones</a>
         </div>
 
         <div className="termsModal__buttons">

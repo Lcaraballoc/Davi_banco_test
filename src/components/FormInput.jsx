@@ -51,13 +51,13 @@ const FormInput = props => {
           onChange={onChange}
           required
         />
-        <button
+        <img
           className="formInput__container__icon"
-          type="button"
+          src={icon}
+          alt=""
           onClick={onClick}
-        >
-          <img src={icon} alt="icon" />
-        </button>
+          onKeyPress
+        />
       </div>
     </div>
   );

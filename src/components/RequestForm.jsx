@@ -59,7 +59,7 @@ const RequestForm = ({ handleModal }) => {
 
         <FormInput
           title="¿Cuál es el valor total de sus ingresos mensuales?"
-          type="text"
+          type="number"
           name="incomes"
           id="incomes"
           onChange={handleChange}
