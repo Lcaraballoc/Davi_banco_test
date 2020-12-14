@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Header from '../components/Header';
 import NavBar from '../components/NavBar';
 import BackButton from '../components/BackButton';
 import RequestForm from '../components/RequestForm';
@@ -19,8 +18,7 @@ const RequestPage = () => {
 
   return (
     <>
-      <Header />
-      <NavBar />
+      <NavBar section="Prueba" subsection="Formulario" />
       <Link to="/">
         <BackButton />
       </Link>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Header from '../components/Header';
 import NavBar from '../components/NavBar';
 import BackButton from '../components/BackButton';
 import PerksList from '../components/PerksList';
@@ -11,8 +10,7 @@ import './styles/BenefitsPage.scss';
 const BenefitsPage = () => {
   return (
     <>
-      <Header />
-      <NavBar />
+      <NavBar section="Prueba" subsection="Beneficios y Características" />
       <BackButton />
       <PerksList />
       <p className="benefitsPage__footer">
