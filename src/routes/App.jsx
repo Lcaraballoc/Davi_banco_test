@@ -8,7 +8,7 @@ import ApprovalPage from '../views/ApprovalPage';
 import ModalContainer from '../components/ModalContainer';
 
 const App = () => (
-  <BrowserRouter className="app">
+  <BrowserRouter>
     <Layout>
       <Switch>
         <Route exact path="/" component={BenefitsPage} />

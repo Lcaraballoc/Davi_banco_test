@@ -1,26 +1,19 @@
+@import "../../GlobalStyles.scss";
+
 .button{
-  background-color: #DD141D;
+  display: block;
+  width: 130px;
+  height: 39px;
+  margin: 0 auto;
   color: white;
   border: none;
   border-radius: 7pt;
-  width: 130px;
-  height: 39px;
   font-size: 18px;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
-  margin: 0 auto;
-  display: block;
+  background-color: $primary-color;
   &__secondary{
-    color: white;
-    border: none;
-    border-radius: 7pt;
-    width: 130px;
-    height: 39px;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    margin: 0 auto;
-    display: block;
+    @extend .button;
     background-color: #939393;
   }
   &:disabled{

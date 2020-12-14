@@ -9,8 +9,8 @@ const logoUrl =
 const Header = () => {
   return (
     <div className="header">
-      <figure>
-        <img className="header__logo" src={logoUrl} alt="Logo Davivienda" />
+      <figure className="header__logo">
+        <img src={logoUrl} alt="Logo Davivienda" />
       </figure>
       <RiCloseCircleFill className="header__closeIcon" />
     </div>

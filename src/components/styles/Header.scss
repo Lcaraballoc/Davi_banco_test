@@ -1,20 +1,17 @@
+@import "../../GlobalStyles.scss";
+
 .header{
-  height: 59px;
-  background-color: #dd141d ;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
-  figure{
-    margin: 0px;
-  }
-
+  height: 59px;
+  background-color: $primary-color ;
   &__logo{
-    width: 100%;
+    margin: 0px;
+    width: 70%;
   }
-  
   &__closeIcon{
     color: white;
-    font-size: 2em;
+    font-size: 32px;
   }
 }

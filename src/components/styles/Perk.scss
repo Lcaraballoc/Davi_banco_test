@@ -1,18 +1,13 @@
 .perk{
-  max-width: 420px;
   display: flex;
-  margin: 0px 8px 26px ;
   align-items: center;
+  max-width: 420px;
+  margin: 0px 8px 26px ;
   font-size: 14px;
   &__icon{
-    font-size: 75px;
     margin-right: 10px;
-    color: #dd141d;
   }
   &__description{
     margin: 0;
-  }
-  &:last-child{
-    margin: 0px 8px;
   }
 }

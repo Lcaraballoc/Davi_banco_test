@@ -1,12 +1,13 @@
+@import '../../GlobalStyles.scss';
+
 .termsModal{
   width: 300px;
   height: 340px;
-  background-color: #EEEEEE;
-  border-radius: 7pt 7pt 0pt 0pt;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
   padding: 16px 16px 0px;
   font-size: 14px;
-
+  color:$dark-text-color;
+  background-color: #EEEEEE;
+  border-radius: 7pt 7pt 0pt 0pt;
   &__title{
     display: flex;
     justify-content: space-around;
@@ -26,23 +27,21 @@
   }
   &__description{
     text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
   }
-  
   &__buttons{
     display: flex;
     justify-content: space-around;
     margin-top: 15px;
-    text-align: center;
     button{
-      width: 100px;
       margin: 0 8px;
     }
   }
-
   &__footer{
-    text-align: center;
     width: 140px;
     margin: 19px auto;
+    text-align: center;
     font-size: 11px;
   }
 }

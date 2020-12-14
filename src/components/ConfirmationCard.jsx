@@ -1,5 +1,6 @@
 import React from 'react';
 import { RiCheckboxCircleFill } from 'react-icons/ri';
+import SmallInfoCard from './SmallInfoCard';
 
 import './styles/ConfirmationCard.scss';
 
@@ -9,6 +10,7 @@ const ConfirmationCard = () => {
       <div className="confirmationCard__header">
         <p>Adelanto de pension y seguro</p>
       </div>
+
       <div className="confirmationCard__status">
         <div className="confirmationCard__status__title">
           <RiCheckboxCircleFill className="confirmationCard__status__icon" />
@@ -19,18 +21,13 @@ const ConfirmationCard = () => {
           informara por medio de un mensajede texto el estado de sus productos
         </p>
       </div>
-      <div className="confirmationCard__details">
-        <p className="confirmationCard__details__title">Adelanto de pension:</p>
-        <p>Aprobado</p>
-      </div>
-      <div className="confirmationCard__details">
-        <p className="confirmationCard__details__title">Tipo de Seguro:</p>
-        <p>Tipo de seguro: Familiar - 106.200 mensual</p>
-      </div>
-      <div className="confirmationCard__details">
-        <p className="confirmationCard__details__title">Fecha y hora:</p>
-        <p>Fecha y hora: 29/01/2020, 09:41 a.m.</p>
-      </div>
+
+      <SmallInfoCard title="Adelanto de pension:" subtitle="Aprobado" />
+      <SmallInfoCard
+        title="Tipo de Seguro:"
+        subtitle="Familiar - 106.200 mensual"
+      />
+      <SmallInfoCard title="Fecha y hora:" subtitle="29/01/2020, 09:41 a.m." />
     </div>
   );
 };

@@ -8,12 +8,20 @@ const FormInput = props => {
     return (
       <div className="formInput">
         <span>{title}</span>
-        <select name={name} id={id} onChange={onChange} required>
-          <option value="" disabled selected>
+        <select
+          name={name}
+          id={id}
+          onChange={onChange}
+          defaultValue=""
+          required
+        >
+          <option value="" disabled>
             Selecciona una opción
           </option>
           {options.map(item => (
-            <option value={item}>{item}</option>
+            <option value={item} key={item}>
+              {item}
+            </option>
           ))}
         </select>
       </div>
