@@ -1,14 +1,14 @@
-# DAVI_BANCO: Prueba tecnica frontend
+# DAVI_BANCO: Prueba técnica frontend
 
-Aplicacion para retiro de pension y contrato de seguro.
+Aplicación para retiro de pensión y contrato de seguro.
 
 
-### Desplegado aqui:
+### Desplegado aquí:
 
 https://dazzling-poitras-62c28a.netlify.app/ 
 
 
-### Para ejecutar en LOCAL siga los pasos:
+### Para ejecutar en LOCAL siga los siguientes pasos:
 
 **1.** Clonar la rama `master` del proyecto
 
@@ -34,4 +34,4 @@ npm run start
 ```
 
 
-**NOTA:** La applicacion esta limitada a la resolucion provista por en el prototipo.
+**NOTA:** La applicación esta limitada a la resolución provista en el prototipo.
