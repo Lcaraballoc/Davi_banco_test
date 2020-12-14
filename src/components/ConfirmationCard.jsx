@@ -19,12 +19,12 @@ const ConfirmationCard = () => {
           <p>Los productos fueron aprobados satisfactoriamente</p>
         </div>
         <p>
-          En un plazo maximo de <strong>5 dias calendario</strong>, se le
-          informara por medio de un mensajede texto el estado de sus productos
+          En un plazo máximo de <strong>5 días calendario</strong>, se le
+          informará por medio de un mensajede texto el estado de sus productos
         </p>
       </div>
 
-      <SmallInfoCard title="Adelanto de pension:" subtitle="Aprobado" />
+      <SmallInfoCard title="Adelanto de pensión:" subtitle="Aprobado" />
       <SmallInfoCard
         title="Tipo de Seguro:"
         subtitle="Familiar - 106.200 mensual"
