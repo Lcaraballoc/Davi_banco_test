@@ -1,5 +1,6 @@
+/* Componente que muestra un beneficio o caracteristica de la pension */
+
 import React from 'react';
-/* import { FaRegMoneyBillAlt } from 'react-icons/fa'; */
 
 import './styles/Perk.scss';
 

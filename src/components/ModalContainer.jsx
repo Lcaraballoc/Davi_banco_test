@@ -1,5 +1,6 @@
+/* Componente contenedor que envuelve a otro componente para convertirlo en modal */
+
 import React from 'react';
-/* import ReactDOM from 'react-dom'; */
 
 import './styles/ModalContainer.scss';
 

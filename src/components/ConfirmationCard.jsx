@@ -1,3 +1,5 @@
+/* Componente que muestra una Card con la confirmacion de la solicitud */
+
 import React from 'react';
 import { RiCheckboxCircleFill } from 'react-icons/ri';
 import SmallInfoCard from './SmallInfoCard';

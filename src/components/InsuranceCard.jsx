@@ -1,3 +1,5 @@
+/* Componente que muestra una card con la informacion y detalles de un tipo de seguro */
+
 import React, { useState } from 'react';
 import MoreInfoButton from './MoreInfoButton';
 

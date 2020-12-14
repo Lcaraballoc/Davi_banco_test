@@ -1,3 +1,5 @@
+/* Componente que muestra un modal donde se da la opcion de tomar un seguro */
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ModalContainer from './ModalContainer';

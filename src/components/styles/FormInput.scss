@@ -8,6 +8,15 @@
   &:last-child{
     margin-bottom: 15px;
   }
+  &__container{
+    position: relative;
+    display: grid;
+    &__icon{
+      position: absolute;
+      top: 17px;
+      right: 17px;
+    }
+  }
   input{
     height: 36px;
     padding: 0 0 0 10px;

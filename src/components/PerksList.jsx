@@ -1,3 +1,5 @@
+/* Componente que muestra listado de beneficios y caracteristicas de la pension */
+
 import React from 'react';
 import Perk from './Perk';
 import Icon from '../assets/Icon2.png';

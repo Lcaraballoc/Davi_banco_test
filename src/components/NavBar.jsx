@@ -1,3 +1,5 @@
+/* Componente que muestra los botones de navegacion */
+
 import React from 'react';
 import { RiMenuFill } from 'react-icons/ri';
 

@@ -1,9 +1,21 @@
+/* Componente que renderiza varios tipo de input y label de acuerdo a los parametros recibidos  */
+
 import React from 'react';
 
 import './styles/FormInput.scss';
 
 const FormInput = props => {
-  const { title, placeHolder, type, id, name, options, onChange } = props;
+  const {
+    title,
+    placeHolder,
+    type,
+    id,
+    name,
+    options,
+    onChange,
+    icon,
+    onClick,
+  } = props;
   if (type === 'select') {
     return (
       <div className="formInput">
@@ -30,14 +42,23 @@ const FormInput = props => {
   return (
     <div className="formInput">
       <span>{title}</span>
-      <input
-        placeholder={placeHolder}
-        type={type || 'text'}
-        name={name}
-        id={id}
-        onChange={onChange}
-        required
-      />
+      <div className="formInput__container">
+        <input
+          placeholder={placeHolder}
+          type={type || 'text'}
+          name={name}
+          id={id}
+          onChange={onChange}
+          required
+        />
+        <button
+          className="formInput__container__icon"
+          type="button"
+          onClick={onClick}
+        >
+          <img src={icon} alt="icon" />
+        </button>
+      </div>
     </div>
   );
 };
