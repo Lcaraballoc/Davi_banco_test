@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import FormInput from './FormInput';
 import Button from './Button';
 
 import './styles/RequestForm.scss';
 
-const RequestForm = () => {
+const RequestForm = ({ handleModal }) => {
   const [user, setUser] = useState({
     incomes: '',
     activity: '',
@@ -93,14 +92,12 @@ const RequestForm = () => {
           onChange={handleChange}
         />
       </div>
-      <Link to="/">
-        <Button
-          text="Continuar"
-          submit
-          disable={!isEnable}
-          secondary={isEnable > 0 ? 'false' : 'true'}
-        />
-      </Link>
+      <Button
+        text="Continuar"
+        disable={!isEnable}
+        secondary={isEnable > 0 ? 'false' : 'true'}
+        onClick={handleModal}
+      />
     </form>
   );
 };

@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import NavBar from '../components/NavBar';
 import BackButton from '../components/BackButton';
 import RequestForm from '../components/RequestForm';
+import TermsModal from '../components/TermsModal';
 
 const RequestPage = () => {
+  const [modalState, setState] = useState(false);
+
+  const handleModal = () => {
+    if (modalState === false) {
+      setState(true);
+    } else {
+      setState(false);
+    }
+  };
+
   return (
     <>
       <Header />
@@ -13,7 +24,8 @@ const RequestPage = () => {
       <Link to="/">
         <BackButton />
       </Link>
-      <RequestForm />
+      <RequestForm handleModal={handleModal} />
+      {modalState && <TermsModal handleModal={handleModal} />}
     </>
   );
 };
