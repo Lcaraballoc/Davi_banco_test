@@ -28,7 +28,7 @@ const InsuranceList = () => {
   return (
     <>
       <div className="insuranceList">
-        <p>¿Como quiere pagar su seguro?</p>
+        <p>¿Cómo quiere pagar su seguro?</p>
         <div className="insuranceList__type">
           <label htmlFor="monthly">
             <input

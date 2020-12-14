@@ -9,7 +9,7 @@ const BackButton = () => {
   return (
     <div className="backButton">
       <img src={BackIcon} alt="" className="backButton__icon" />
-      <span>Atras</span>
+      <span>Atrás</span>
     </div>
   );
 };

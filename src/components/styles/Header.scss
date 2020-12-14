@@ -2,7 +2,7 @@
 
 .header{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 59px;
   background-color: $primary-color ;
@@ -12,6 +12,7 @@
   }
   &__closeIcon{
     color: white;
+    margin-left: 15px;
     font-size: 32px;
   }
 }

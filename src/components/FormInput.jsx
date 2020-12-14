@@ -56,7 +56,6 @@ const FormInput = props => {
           src={icon}
           alt=""
           onClick={onClick}
-          onKeyPress
         />
       </div>
     </div>

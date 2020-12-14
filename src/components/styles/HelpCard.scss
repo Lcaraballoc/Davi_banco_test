@@ -12,4 +12,6 @@
   color: black;
   background-color: #cccccc;
   border-radius: 7pt;
+  animation: 0.4s fadeIn;
+  animation-fill-mode: forwards;
 }
