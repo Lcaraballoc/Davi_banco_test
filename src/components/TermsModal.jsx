@@ -1,3 +1,5 @@
+/* Componente que muestra un modal donde se da la opcion de tomar un seguro */
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ModalContainer from './ModalContainer';
@@ -26,7 +28,7 @@ const TermsModal = ({ handleModal }) => {
         </div>
 
         <div className="termsModal__description">
-          <a href="/">Ver Terminos y Condiciones</a>
+          <a href="#">Ver Terminos y Condiciones</a>
         </div>
 
         <div className="termsModal__buttons">

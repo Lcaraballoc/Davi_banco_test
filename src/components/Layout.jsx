@@ -1,3 +1,5 @@
+'Componente que permite reutilizar el Header en todas las vistas';
+
 import React from 'react';
 import Header from './Header';
 

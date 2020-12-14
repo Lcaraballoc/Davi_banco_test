@@ -1,6 +1,11 @@
-import React, { useState } from 'react';
+/* Componente que muestra el formulario para solicitud de la pension */
+
+import React, { useState, useEffect } from 'react';
 import FormInput from './FormInput';
 import Button from './Button';
+import EditIcon from '../assets/editIcon.png';
+import QuestionIcon from '../assets/questionIcon.png';
+import HelpCard from './HelpCard';
 
 import './styles/RequestForm.scss';
 
@@ -23,12 +28,26 @@ const RequestForm = ({ handleModal }) => {
     user.city.length > 0 &&
     user.address.length;
 
+  const [component, setComponent] = useState();
+
   const handleChange = e => {
     setUser({
       ...user,
       [e.target.name]: e.target.value,
     });
   };
+
+  const handleClick = () => {
+    if (component === false) {
+      setComponent(true);
+    } else {
+      setComponent(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('mouseup', handleClick);
+  }, []);
 
   return (
     <form className="requestForm" action="">
@@ -40,7 +59,7 @@ const RequestForm = ({ handleModal }) => {
 
         <FormInput
           title="¿Cuál es el valor total de sus ingresos mensuales?"
-          type="text"
+          type="number"
           name="incomes"
           id="incomes"
           onChange={handleChange}
@@ -81,6 +100,7 @@ const RequestForm = ({ handleModal }) => {
           type="text"
           name="address"
           id="address"
+          icon={EditIcon}
           onChange={handleChange}
         />
         <FormInput
@@ -89,7 +109,9 @@ const RequestForm = ({ handleModal }) => {
           type="text"
           name="adviser"
           id="adviser"
+          icon={QuestionIcon}
           onChange={handleChange}
+          onClick={handleClick}
         />
       </div>
       <Button
@@ -98,6 +120,9 @@ const RequestForm = ({ handleModal }) => {
         secondary={isEnable > 0 ? 'false' : 'true'}
         onClick={handleModal}
       />
+      {component && (
+        <HelpCard content="Si le prestaron asesoría, ingrese el código del asesor comercial que lo está ayudando con esta solicitud; de lo contrario, no diligencie este espacio." />
+      )}
     </form>
   );
 };

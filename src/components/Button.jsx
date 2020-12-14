@@ -1,3 +1,5 @@
+/* Componente que renderiza un button activo o inactivo, dependiendo de los parametros recibidos */
+
 import React from 'react';
 
 import './styles/Button.scss';

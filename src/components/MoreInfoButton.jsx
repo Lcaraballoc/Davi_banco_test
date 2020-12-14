@@ -1,3 +1,5 @@
+/* Componente que muestra un botton para mostrar mas informacion */
+
 import React from 'react';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 

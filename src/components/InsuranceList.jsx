@@ -1,3 +1,5 @@
+/* Componente que se encarga de mostrar la lista de seguros y metodo de pago */
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import InsuranceCard from './InsuranceCard';

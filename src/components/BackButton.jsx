@@ -1,3 +1,5 @@
+/*  Componente que redirige a la vista anterior a traves de un boton */
+
 import React from 'react';
 import BackIcon from '../assets/atras.png';
 

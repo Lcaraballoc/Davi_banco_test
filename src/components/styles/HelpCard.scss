@@ -1,0 +1,15 @@
+@import '../../GlobalStyles.scss';
+
+.helpCard {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 80px;
+  width: 250px;
+  padding: 3px 15px;
+  margin: auto;
+  font-size: 12px;
+  color: black;
+  background-color: #cccccc;
+  border-radius: 7pt;
+}
