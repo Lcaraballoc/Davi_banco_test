@@ -9,8 +9,6 @@
     align-items: center;
     border-radius: 10pt;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
-    padding: 14px 10px;
-    height: 42px;
     background-color: white;
   }
   &__subtitle{
@@ -19,6 +17,9 @@
   }
   &__price{
     font-size: 14px;
+  }
+  img{
+    margin: 8px;
   }
   input{
     justify-self: center;
@@ -31,7 +32,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px;
+    width: 127px;
     top: 58px;
     left: 0;
     right: 0;
@@ -39,8 +40,10 @@
     background-color: #F9F9F9;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
     padding: 4px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
     border-radius: 12pt;
-    font-size: 12px;
+    font-size: 10px;
     z-index: 2;
   }
   &__details{
