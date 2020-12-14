@@ -1,0 +1,13 @@
+.perk{
+  display: flex;
+  align-items: center;
+  max-width: 420px;
+  margin: 0px 8px 26px ;
+  font-size: 14px;
+  &__icon{
+    margin-right: 10px;
+  }
+  &__description{
+    margin: 0;
+  }
+}

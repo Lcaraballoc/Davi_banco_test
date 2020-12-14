@@ -1,0 +1,26 @@
+@import '../../GlobalStyles.scss';
+
+.formInput{
+  display: grid;
+  margin-top: 15px;
+  font-size: 13px;
+  color: $dark-text-color;
+  &:last-child{
+    margin-bottom: 15px;
+  }
+  input{
+    height: 36px;
+    padding: 0 0 0 10px;
+    margin-top: 5px;
+    border: 1px solid #7070704D;
+    border-radius: 5pt;
+    &::placeholder{
+      color: $dark-text-color;
+      opacity: 50%;
+    }
+  }
+  select{
+    @extend input;
+    height: 38px;
+  }
+}

@@ -1,0 +1,19 @@
+.moreInfoButton{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 127px;
+  margin: auto;
+  top: 58px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 4px;
+  font-size: 10px;
+  border: none;
+  border-radius: 12pt;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F9F9F9;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+}

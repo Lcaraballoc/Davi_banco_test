@@ -1,0 +1,56 @@
+@import '../../GlobalStyles.scss';
+
+.insuranceCard{
+  position: relative;
+  margin: 5px 0px 22px;
+  font-size: 12px;
+  &__title{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.4fr;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    @include cardStyles;
+  }
+  &__subtitle{
+    font-weight:500;
+  }
+  &__price{
+    font-size: 14px;
+  }
+  &__details{
+    border-radius: 12pt;
+    padding: 20px 12px 10px;
+    background-color: white;
+    animation: 1.2s fadeIn;
+    animation-fill-mode: forwards;
+  }
+  img{
+    margin: 8px;
+  }
+  input{
+    justify-self: center;
+  }
+  span{
+    display: block;
+  }
+  ul{
+    margin: 0;
+    padding-left: 22px;
+    list-style-image: url(/src/assets/bulletPoint.png);
+  }
+  li{
+    margin-bottom: 5px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}

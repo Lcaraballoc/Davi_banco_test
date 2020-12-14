@@ -1,0 +1,39 @@
+@import '../../GlobalStyles.scss';
+
+.confirmationCard{
+  margin: 16px 14px;
+  padding-bottom: 2px;
+  border-radius: 5pt;
+  color: $dark-text-color;
+  background-color: #F9F9F9;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+  &__header{
+    padding: 5px 10px;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    border-radius: 5pt 5pt 0pt 0pt;
+    background-color: $dark-text-color;
+  }
+  &__status{
+    margin: 5px;
+    padding: 15px 17px;
+    font-size: 13px;
+    background-color: white;
+    &__title{
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    &__icon{
+      width: 60px;
+      margin-right: 10px;
+      font-size: 42px;
+    }
+  }
+  p{
+    margin: 0;
+  }
+}

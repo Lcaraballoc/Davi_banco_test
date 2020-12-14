@@ -1,0 +1,15 @@
+@import '../../GlobalStyles.scss';
+
+.requestForm{
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10pt;
+  color: $dark-text-color;
+  background-color: $light-background-color;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+  &__card__header{
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+  }
+}

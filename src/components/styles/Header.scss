@@ -1,0 +1,17 @@
+@import "../../GlobalStyles.scss";
+
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 59px;
+  background-color: $primary-color ;
+  &__logo{
+    margin: 0px;
+    width: 70%;
+  }
+  &__closeIcon{
+    color: white;
+    font-size: 32px;
+  }
+}
