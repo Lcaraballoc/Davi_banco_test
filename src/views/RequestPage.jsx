@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import NavBar from '../components/NavBar';
 import BackButton from '../components/BackButton';
@@ -9,7 +10,9 @@ const RequestPage = () => {
     <>
       <Header />
       <NavBar />
-      <BackButton />
+      <Link to="/">
+        <BackButton />
+      </Link>
       <RequestForm />
     </>
   );

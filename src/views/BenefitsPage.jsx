@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import NavBar from '../components/NavBar';
 import BackButton from '../components/BackButton';
@@ -19,7 +20,9 @@ const BenefitsPage = () => {
         {' '}
         <strong>FOGAFIN</strong>
       </p>
-      <Button text="Continuar" />
+      <Link to="/requestForm">
+        <Button text="Continuar" />
+      </Link>
     </>
   );
 };
